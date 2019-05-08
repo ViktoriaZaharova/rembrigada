@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="128px" height="128px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 128000 128000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g>
+  <metadata/>
+  <path class="fil0" d="M99748 1l-71495 0c-1210,0 -2190,981 -2190,2191l0 16676c0,2881 4381,2879 4381,0l0 -14486 67114 0 0 119237 -67114 0 0 -97526c0,-2880 -4381,-2881 -4381,0l0 99715c0,1210 981,2191 2190,2191l71495 0c1210,0 2190,-981 2190,-2191l0 -123618c0,-1954 -2190,-2335 -2190,-2190zm-35748 24833c-1657,0 -3000,-1343 -3000,-3000 0,-1657 1343,-3000 3000,-3000 1657,0 3000,1343 3000,3000 0,1657 -1343,3000 -3000,3000zm-16298 38126l-5832 0c-166,-1046 -1071,-1845 -2163,-1845 -1210,0 -2191,981 -2191,2190 0,2225 1810,4036 4035,4036l6151 0c2881,0 2883,-4381 0,-4381z"/>
+ </g>
+</svg>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ремонт “под ключ” квартир в Казани. Контакты</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+@import "header.html"
+<div class="content">
+    <section class="section-contacts page-contacts-section">
+
+        <div class="page-title">
+            <div class="container">
+                <h1>Контакты</h1>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="contacts-content">
+                <div class="box-contacts">
+
+                    <div class="box-top">
+                        <div class="left">
+                            <p>Казань, ул. Четаева, 27</p>
+
+                            <ul class="list-phone">
+                                <li><a href="tel:+78432601100">Тел: +7 (843) 260-11-00</a></li>
+                                <li><a href="tel:+79872301734">Тел: +7 (987) 230‑17-34</a></li>
+                            </ul>
+
+                            <a href="mailto:Rembrigada116@yandex.ru" class="mail">Rembrigada116@yandex.ru</a>
+                        </div>
+
+                        <div class="right">
+                            ИНН 163300422218
+                            ОГРНИП 313169008600154
+                        </div>
+                    </div>
+                    <div class="box-schedule">
+                        <div class="icon"><img src="img/clock.png" alt=""></div>
+                        Пн-пт 9:00 – 21:00; сб 9:00 – 19:00
+                    </div>
+                </div>
+                <form method="post" class="form-callback form">
+                    <h3>Обратная связь</h3>
+                    <div class="form-left">
+                        <label><input type="text" name="name" placeholder="Имя"></label>
+                        <label><input type="text" name="mail" placeholder="E-mail*"></label>
+                        <label><input type="text" name="phone" placeholder="Телефон"></label>
+                    </div>
+                    <div class="form-right">
+                        <label><textarea name="message" placeholder="Текст сообщения"></textarea></label>
+                    </div>
+
+                    <div class="form-left">
+                        <button type="submit" class="btn-submit">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+
+                    <div class="form-right">
+                        <label class="checkbox">
+                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Прочитал(-а) <a href="#" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a
+                                    href="#" target="_blank">Политикой обработки персональных данных</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div id="map"></div>
+
+        </div>
+    </section>
+</div>
+
+@import "footer.html"
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

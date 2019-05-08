@@ -1,0 +1,1043 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #d4dae1
+  opacity: 1
+
+*:-moz-placeholder
+  color: #d4dae1
+  opacity: 1
+
+*::-moz-placeholder
+  color: #d4dae1
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #d4dae1
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #d4dae1
+
+body input:required:valid,
+body textarea:required:valid
+  color: #d4dae1
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 18px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: "Arimo", sans-serif
+  background: #ffff
+  
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.container
+  width: 100%
+  max-width: 1540px
+  padding: 0 15px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+h1
+  font-size: 48px
+  font-family: 'NEXTART-Bold', sans-serif
+  letter-spacing: 0.48px
+
+h2
+  font-size: 32px
+  font-family: 'NEXTART-Bold', sans-serif
+  letter-spacing: 0.32px
+
+h3
+  font-size: 28px
+  font-family: 'NEXTART-Bold', sans-serif
+
+h4
+  font-size: 22px
+  font-family: 'NEXTART-Bold', sans-serif
+
+h5
+  font-size: 20px
+  font-family: 'Arimo', sans-serif
+  font-weight: bold
+
+h6
+
+  font-size: 14px
+  font-family: 'Arimo', sans-serif
+  font-weight: bold
+  font-style: italic
+
+a
+  transition: .3s ease
+  display: block
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+button
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .3s ease
+  font-size: 18px
+  font-family: 'NEXTART-Bold', sans-serif
+  letter-spacing: 3.6px
+  text-transform: uppercase
+  cursor: pointer
+
+.btn-details
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 4px solid $red1
+    radius: 40px
+  width: 295px
+  height: 74px
+  background: transparent
+  color: #fff
+  font-size: 18px
+  font-family: 'NEXTART-Bold', sans-serif
+  padding: 0 73px 0 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: -1px
+    top: 0
+    border-radius: 0 40px 40px 0
+    border: none
+      left: 4px solid $red1
+    background: url("../img/arrow-right.png") no-repeat center $red1
+      size: 14px
+    width: 73px
+    height: 100%
+    transition: .3s ease
+  &:hover
+    background-color: $hover-text-link
+    color: #ffffff
+    &:before
+      background-color: $hover-text-link
+  &:focus, &:visited
+    background-color: $red2
+    &:before
+      background-color: $red2
+
+.btn-details-black
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 3px solid $red1
+    radius: 40px
+  width: 286px
+  height: 63px
+  background: transparent
+  color: #000
+  font-size: 16px
+  font-family: 'NEXTART-Bold', sans-serif
+  padding: 0 67px 0 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: -1px
+    top: 0
+    border-radius: 0 40px 40px 0
+    border: none
+      left: 3px solid $red1
+    background: url("../img/arrow-right-black.png") no-repeat center transparent
+      size: 13px
+    width: 67px
+    height: 100%
+    transition: .3s ease
+  &:hover
+    background-color: $hover-text-link
+    color: #ffffff
+    &:before
+      background: url("../img/arrow-right.png") no-repeat center $hover-text-link
+        size: 13px
+  &:focus, &:visited
+    background-color: $red2
+    &:before
+      background-color: url("../img/arrow-right.png") no-repeat center $red2
+        size: 13px
+
+.btn-still
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid #bcbcbc
+    radius: 40px
+  width: 234px
+  height: 38px
+  background: transparent
+  color: #000
+  font-size: 16px
+  font-family: 'NEXTART-Bold', sans-serif
+  padding: 0 49px 0 0
+  position: relative
+  letter-spacing: 0.8px
+  margin: 0 auto
+  &:before
+    content: '+'
+    position: absolute
+    right: -1px
+    top: 0
+    border-radius: 0 40px 40px 0
+    border: none
+      left: 2px solid #bcbcbc
+    background: transparent
+    width: 49px
+    height: 100%
+    transition: .3s ease
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 30px
+    font-family: 'Arimo', sans-serif
+  &:hover
+    background-color: #adadad
+    color: #fff
+    &:before
+      background: #adadad
+  &:focus, &:visited
+    background-color: #ababab
+    &:before
+      background-color: #ababab
+
+.btn-submit
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 3px solid $red1
+    radius: 40px
+  width: 238px
+  height: 56px
+  background: transparent
+  color: #fefeff
+  font-size: 16px
+  font-family: 'NEXTART-Bold', sans-serif
+  padding: 0 64px 0 0
+  position: relative
+  letter-spacing: 0.8px
+  span
+    cursor: pointer
+    transition: .3s ease
+    background: $red1
+    height: 50px
+    border-radius: 40px 0 0 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 182px
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    border-radius: 0 40px 40px 0
+    border: none
+      left: 3px solid $red1
+    background: url("../img/arrow-right-red.png") no-repeat center transparent
+      size: 13px
+    width: 64px
+    height: 100%
+    transition: .3s ease
+  &:hover
+    span
+      background-color: $red2
+      color: #ffffff
+    &:before
+      background: url("../img/arrow-right.png") no-repeat center $red2
+        size: 13px
+  &:focus, &:visited
+    background-color: $red2
+    color: #ffffff
+    &:before
+      background-color: url("../img/arrow-right.png") no-repeat center $red2
+        size: 13px
+
+.text-links
+  display: flex
+  align-items: center
+  color: #297780
+  font-size: 14px
+  padding: 0 8px 3px 0
+  box-sizing: border-box
+  width: fit-content
+  font-weight: 700
+  position: relative
+  border-bottom: 1px dotted #297780
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 5px
+    width: 5px
+    height: 8px
+    background: url("../img/arrow-right-links.png") no-repeat center
+      size: cover
+  &:hover
+    color: #20a8ff
+    border-color: #20a8ff
+    &:before
+      background: url("../img/arrow-right-links-blue.png") no-repeat center
+        size: cover
+
+
+
+.btn
+  background-color: $hover-text-link
+  color: #fff
+  &:hover
+    background-color: $red2
+    color: #fff
+
+header.fixed
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 999
+  .logo
+    padding: 8px 0 4px
+
+.header
+  position: relative
+  background-color: $bg1
+  .container
+    align-items: center
+    justify-content: space-between
+
+.logo
+  padding: 27px 0 21px
+  width: 254px
+
+
+//menu
+.header-menu
+  .menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 900px
+    .menu-item
+      position: relative
+      &:hover
+        .dropdown-wrapper
+          pointer-events: auto
+          opacity: 1
+          visibility: visible
+      .menu-item-link
+        text-transform: uppercase
+        color: #fff
+        letter-spacing: 0.89px
+        font-family: 'NEXTART-Bold', sans-serif
+        font-size: 18px
+        border-bottom: 1px solid transparent
+        display: flex
+        align-items: center
+        padding: 0 0 5px
+        .icon-arrow
+          padding: 4px 2px
+          transition: .3s ease
+          display: flex
+          align-items: center
+          justify-content: center
+          margin: 0 0 0 3px
+        &:hover, &:focus
+          border-color: #ff394f
+          .icon-arrow
+            background: #ff394f
+
+.dropdown-wrapper
+  position: absolute
+  opacity: 0
+  visibility: hidden
+  left: 0
+  top: 25px
+  z-index: 7
+  background-color: #545965
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.23)
+  padding: 5px
+  box-sizing: border-box
+  pointer-events: none
+  .dropdown-menu
+    background-color: $yellow1
+    border: 3px solid #545965
+    box-sizing: border-box
+    padding: 0 3px 47px
+
+.dropdown-menu-link
+  color: #5f5f5f
+  font-size: 15px
+  font-weight: bold
+  border-top: 1px solid #eeeeee
+  width: 100%
+  line-height: 14px
+  padding: 15px 37px 15px 22px
+  position: relative
+  min-width: 230px
+  &:hover
+    background-color: #fff3cf
+    color: #000000
+  &:before
+    content: '+'
+    font-size: 18px
+    position: absolute
+    right: 17px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 20px
+    height: 20px
+    background-color: #ffe777
+    border-radius: 50%
+    color: #4e4e51
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: normal
+
+.dropdown-menu-link.open
+  background-color: #ffeebc
+  color: #000
+  &:before
+    content: '-'
+    background-color: #ffe777
+
+.links-additional.dropdown-menu-link
+  font-weight: normal
+  font-size: 14px
+
+.dropdown-menu__submenu
+  border: 8px solid #ffeebc
+  display: none
+
+.dropdown-menu__submenu-item-link
+  background: #ffffff
+  width: 100%
+  border-bottom: 1px solid #eeeeee
+  padding: 12px 25px 8px
+  font-size: 13px
+  color: #424242
+  line-height: 12px
+  letter-spacing: 0.97px
+  transition: .3s ease
+  &:hover
+    background-color: #545965
+    border-color: #545965
+    color: #ffffff
+
+.btn-mobile-menu
+  display: none
+  align-items: center
+  font-size: 14px
+  color: #e5e5e6
+  font-family: 'NEXTART-Bold', sans-serif
+  text-transform: uppercase
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    .icon
+      background: #030303
+  .icon
+    margin: 0 10px 0 0
+    padding: 11px 10px
+    background: transparent
+    transition: .3s ease
+
+.btn-mobile-menu.click
+  position: absolute
+  left: 264px
+  &:hover
+    background: #000
+    .text
+      padding: 0 10px 0 0
+  .text
+    color: #cfcfd0
+
+.mobile-menu-wrapper.on
+  left: 0
+
+.mobile-menu-wrapper
+  position: fixed
+  left: -100%
+  top: 0
+  height: 100%
+  width: 264px
+  overflow: auto
+  display: flex
+  flex-direction: column
+  z-index: 20
+  background-color: #545965
+  padding: 14px 9px 57px
+  box-shadow: 10px 0 12px -1px rgba(0,0,0,0.43)
+  transition: .3s ease
+
+.mobile-menu-wrapper__head
+  margin: 0 0 15px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  a
+    color: #fff
+  .phone
+    font-size: 14px
+  .btn-modal-callback
+    width: 40px
+    height: 40px
+    margin: 0 0 0 22px
+    .icon
+      width: 19px
+      height: 19px
+      img
+        width: 100%
+        margin: 0
+
+.mobile-menu-wrapper__body
+  background-color: #ffffff
+  box-shadow: 0 0 3px rgba(15, 22, 38, 0.15)
+  .dropdown-wrapper
+    box-shadow: none
+    opacity:
+    opacity: 1
+    visibility: visible
+    display: none
+    top: 0
+    left: 0
+    z-index: 2
+    position: relative
+    background-color: $hover-text-link
+    pointer-events: auto
+    padding: 3px
+    .dropdown-menu
+      border: none
+      padding: 0
+      .dropdown-menu-link
+        min-width: auto
+        max-width: 241px
+        padding: 15px 37px 15px 22px
+
+
+.mobile-menu-wrapper__footer
+  background-color: #e4e8f0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  padding: 34px 0
+  a.phone
+    color: #525758
+    margin: 0 auto 10px
+  p
+    font-size: 10px
+    text-transform: uppercase
+    color: #000000
+    font-family: 'NEXTART', sans-serif
+    letter-spacing: 1px
+
+.mobile-menu
+  .menu-item
+    &:nth-child(odd)
+      .menu-item-link
+        background-color: #f5f9fe
+
+    .menu-item-link
+      height: 51px
+      padding: 9px 10px 9px 24px
+      box-sizing: border-box
+      border-bottom: 1px solid #e4e8f0
+      display: flex
+      align-items: center
+      color: #3b3b3b
+      font-size: 14px
+      text-transform: uppercase
+      font-family: 'NEXTART-Bold', sans-serif
+      letter-spacing: -0.14px
+      justify-content: space-between
+      .icon-arrow
+        width: 32px
+        height: 32px
+        background-color: #bec2cb
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+
+    .menu-item-link.open
+      background-color: $hover-text-link
+      border-color: $hover-text-link
+      color: #fff
+      .icon-arrow
+        img
+          transform: rotate(180deg)
+
+
+
+//menu end
+
+
+.phone
+  font-size: 18px
+  color: #fff
+  letter-spacing: 0.47px
+  text-transform: uppercase
+  font-family: 'NEXTART-Bold', sans-serif
+
+.box-callback
+  color: #ffffff
+  font-size: 9px
+  text-transform: uppercase
+  font-weight: 700
+  letter-spacing: 0.27px
+  padding: 2px 5px
+  background-color: $red1
+  margin: 8px 0 0 0
+  border-radius: 10px
+
+.list-block
+  text-transform: uppercase
+  font-size: 18px
+  color: #2a2c2f
+  li
+    position: relative
+    box-sizing: border-box
+    &:last-child
+      margin: 0
+    a
+      color: #2a2c2f
+      position: relative
+      padding: 7px 27px 7px 36px
+      &:before
+        content: ''
+        position: absolute
+        left: 7px
+        top: 50%
+        transform: translate(0,-50%)
+        width: 12px
+        height: 12px
+        background-color: $hover-text-link
+
+.list-plus
+  color: #f3f3f3
+  font-size: 18px
+  li
+    position: relative
+    padding: 0 0 0 71px
+    box-sizing: border-box
+    margin: 0 0 70px
+    &:before
+      content: '+'
+      position: absolute
+      left: 0
+      top: 0
+      width: 60px
+      height: 60px
+      border: 1px solid rgba(255, 255, 255, 0.33)
+        radius: 50%
+      background-color: transparent
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 47px
+      color: $hover-text-link
+
+
+
+
+.btn-scroll
+  width: 84px
+  height: 84px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 48px
+  left: 50%
+  transform: translate(-50%,0)
+  position: absolute
+  z-index: 2
+  background-color: rgba(#1d1e21, .2)
+  &:hover
+    background-color: rgba(#1d1e21, .7)
+    border: 1px solid #4f5054
+
+.btn-slider
+  margin: 48px auto 0
+  text-transform: uppercase
+  color: #fff
+  background: transparent
+  font-size: 20px
+  font-family: 'NEXTART-Bold', sans-serif
+  letter-spacing: 0.96px
+  padding: 10px 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    top: -1px
+    width: calc(100% - 6px)
+    height: 100%
+    background-color: $hover-text-link
+    z-index: 0
+  span
+    position: relative
+    z-index: 1
+  &:hover
+    &:before
+      background-color: $red2
+
+.slick-arrow-main
+  border: 2px solid #bcbcbc
+  width: 33px
+  height: 32px
+  background: url("../img/arrow-right-white.png") transparent no-repeat center
+    size: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    background: url("../img/arrow-right-black.png") #acadad no-repeat center
+      size: 8px
+  &:focus, &:visited
+    background: url("../img/arrow-right-black.png") #d9d9d9 no-repeat center
+      size: 8px
+
+.slick-arrow-prev
+  transform: rotate(180deg)
+  margin: 0 -1px 0 0
+  border-radius: 0 50% 50% 0
+
+.slick-arrow-next
+  margin: 0 0 0 -1px
+  border-radius: 0 50% 50% 0
+
+.color-white
+  color: #fff
+
+.text-center
+  text-align: center
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  margin: 29px 0 0 0
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    min-width: 18px
+    width: 18px
+    height: 18px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #0a0f37
+      radius: 3px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 10px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: #404040
+    cursor: pointer
+    font-size: 12px
+    max-width: 221px
+    a
+      text-decoration: underline
+      display: inline
+      color: #404040
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      transform: translate(-50%,-50%)
+      left: 50%
+      margin: 0 auto
+      width: 14px
+      height: 12px
+      background: url("../img/check.png") no-repeat center
+        size: contain
+
+
+[class*="ymaps-2"][class*="-ground-pane"]
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+  -webkit-filter: grayscale(100%)
+
+input, textarea
+  border: 2px solid #6c7483
+  background-color: #ffffff
+  height: 100%
+  width: 100%
+  padding: 0 21px
+  box-sizing: border-box
+  color: #505661
+  font-size: 14px
+  font-family: 'Arimo', sans-serif
+  letter-spacing: 0.35px
+  outline: none
+  &::placeholder
+    color: #505661
+
+textarea
+  height: 190px
+  padding: 19px 20px
+
+
+label
+  display: block
+  height: 48px
+  width: 273px
+  margin: 0 0 22px
+  &:last-child
+    margin: 0
+
+#btn-top
+  display: flex
+  align-items: center
+  justify-content: center
+  position: fixed
+  right: 78px
+  top: 50%
+  width: 60px
+  height: 60px
+  background-color: #cccccc
+  border-radius: 50%
+  z-index: 10
+  &:hover
+    background-color: #a1a1a1
+
+
+//modal
+.modal-div.active
+  right: 0
+
+.modal-div
+  position: fixed
+  right: -1000%
+  display: flex
+  top: 90px
+  z-index: 20
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35)
+  background-color: #ffffff
+  padding: 41px 41px 73px 83px
+  box-sizing: border-box
+  flex-wrap: wrap
+  transition: .7s ease
+
+.modal-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 22px 0 0 0
+
+.modal-image
+  position: relative
+  width: 360px
+  &:before
+    content: ''
+    position: absolute
+    right: -43px
+    bottom: -50px
+    width: 100%
+    height: 100%
+    border: 17px solid rgba(#c0c0c0, .29)
+  .image
+    width: 100%
+    height: 360px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 2
+    position: relative
+  .btn-slider
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    z-index: 2
+    text-align: center
+    margin: 0
+
+.modal-content
+  max-width: 350px
+  margin: 0 0 0 93px
+  h2
+    color: $subtitle
+    font-size: 30px
+    margin: 0 0 34px
+    line-height: 30px
+    letter-spacing: 0.3px
+  p
+    color: #484848
+    font-size: 16px
+    line-height: 18px
+
+.modal-close
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(#000000, .4)
+  width: 68px
+  height: 68px
+  margin: 0 0 0 auto
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    background: #000
+
+.form-modal
+  margin: 23px 0 0 0
+  label
+    margin: 0 0 13px
+  .btn-submit
+    margin: 16px 0 0 0
+
+.list-category
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 65px 0 0 0
+  li
+    a
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 156px
+      .text
+        color: #505050
+        line-height: 13.03px
+        font-size: 12px
+        text-transform: uppercase
+        text-align: center
+      .icon
+        width: 156px
+        height: 156px
+        border: 10px solid $grey3
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto 16px
+        padding: 33px
+        transition: .3s ease
+        svg
+          fill: #818181
+      &:hover
+        .icon
+          border-color: #c6c6c6
+        .text
+          color: #000000
+          border-bottom: 3px solid $red2
+
+.modal-thanks
+  .modal-content
+    max-width: 505px
+
+.btn-modal-callback
+  display: flex
+  align-items: center
+  .icon
+    margin: 0 2px 0 0
+    width: 10px
+    height: 10px
+    svg
+      fill: #fff
+      width: 100%
+      height: 100%
+
+
+
+.content
+  section
+    padding: 0
+
+.page-title
+  background-color: rgba(#2a2a2a, .3)
+  padding: 37px 0
+  width: 100%
+  .container
+    justify-content: flex-start
+    align-items: flex-start
+  h1
+    color: #fff
+    background-color: rgba($bg1, .8)
+    text-align: left
+
+
+
+
+
+
+@import "../components/pages/home/style"
+@import "../components/pages/contacts/style"
+@import "media"
+// Всегда в конце
